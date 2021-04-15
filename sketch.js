@@ -57,6 +57,11 @@ function drawFaces(faces, noKeypoints){
       var a = keypoints[TRI[j  ]];
       var b = keypoints[TRI[j+1]];
       var c = keypoints[TRI[j+2]];
+      Object.keys(MARKCOLOR).forEach(function(m){
+        if (MARK[m].includes(TRI[j])){
+          dbg.strokeStyle = MARKCOLOR[m];
+        }
+      });
       dbg.beginPath();
       dbg.moveTo(a[0], a[1]);
       dbg.lineTo(b[0], b[1]);
@@ -73,9 +78,9 @@ function packFace(face, set){
   for (var i = 0; i < set.length; i++){
     var j = set[i];
     ret.scaledMesh[i] = [
-      Math.floor(face.scaledMesh[j][0] * 100) / 100,
-      Math.floor(face.scaledMesh[j][1] * 100) / 100,
-      Math.floor(face.scaledMesh[j][2] * 100) / 100,
+      Math.floor(face.scaledMesh[j][0] * 100) / 100, // x
+      Math.floor(face.scaledMesh[j][1] * 100) / 100, // y
+      Math.floor(face.scaledMesh[j][2] * 100) / 100, // 3D depth
     ];
   }
   return ret;
