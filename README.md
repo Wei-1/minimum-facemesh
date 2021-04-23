@@ -8,8 +8,8 @@ This project uses TF.js to calculate the facial landmarks.
 
 There are many Demos out there that are too complex. This repository is the minimum setup that I developed that contains a reasonable amount of component.
 
-This repo uses that latest dependencies from Google at 2021-04-15:
- - [tfjs@3.4.0](https://github.com/tensorflow/tfjs)
+This repo uses that latest dependencies from Google at 2021-04-23:
+ - [tfjs@3.5.0](https://github.com/tensorflow/tfjs)
  - [face-landmarks-detection@0.0.3](https://github.com/tensorflow/tfjs-models)
 
 There are 5 files in this repo:
@@ -34,3 +34,5 @@ If you want to try this repo by yourself, you can clone the project and use [htt
  - 2021-04-15
    - TF.js update to `3.4.0`
    - Add landmarks color
+ - 2021-04-23
+   - TF.js update ot `3.5.0`
