@@ -7,6 +7,7 @@ var videoDataLoaded = false; // is webcam capture ready?
 var statusText = "Loading facemesh model...";
 var myFaces = []; // faces detected in this browser
 var canvasRatio = 0.5;
+var cameraFlip = true;
 
 // html canvas for drawing debug view
 var dbg = document.createElement("canvas").getContext('2d');
@@ -105,9 +106,12 @@ function render() {
   dbg.clearRect(0, 0, dbg.canvas.width, dbg.canvas.height);
   
   dbg.save();
-  dbg.fillStyle = "red";
-  dbg.strokeStyle = "red";
-  dbg.scale(canvasRatio, canvasRatio);
+  if (cameraFlip){
+    dbg.translate(dbg.canvas.width, 0);
+    dbg.scale(- canvasRatio, canvasRatio);
+  }else{
+    dbg.scale(canvasRatio, canvasRatio);
+  }
   dbg.drawImage(capture, 0, 0); // print the camera
   drawFaces(myFaces); // print the mesh
   dbg.restore();
