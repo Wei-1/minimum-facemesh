@@ -38,3 +38,5 @@ If you want to try this repo by yourself, you can clone the project and use [htt
    - TF.js update ot `3.5.0`
  - 2021-04-26
    - Add `cameraFlip` variable
+ - 2021-04-29
+   - TF.js update ot `3.6.0`
