@@ -40,3 +40,5 @@ If you want to try this repo by yourself, you can clone the project and use [htt
    - Add `cameraFlip` variable
  - 2021-04-29
    - TF.js update ot `3.6.0`
+ - 2021-05-01
+   - Add irises
