@@ -35,12 +35,14 @@ If you want to try this repo by yourself, you can clone the project and use [htt
    - TF.js update to `3.4.0`
    - Add landmarks color
  - 2021-04-23
-   - TF.js update ot `3.5.0`
+   - TF.js update to `3.5.0`
  - 2021-04-26
    - Add `cameraFlip` variable
  - 2021-04-29
-   - TF.js update ot `3.6.0`
+   - TF.js update to `3.6.0`
  - 2021-05-01
    - Add irises
  - 2021-06-04
-   - TF.js update ot `3.7.0`
+   - TF.js update to `3.7.0`
+ - 2021-07-16
+   - TF.js update to `3.8.0`
