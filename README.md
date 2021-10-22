@@ -48,4 +48,6 @@ If you want to try this repo by yourself, you can clone the project and use [htt
    - TF.js update to `3.8.0`
  - 2021-09-01
    - TF.js update to `3.9.0`
+ - 2021-10-22
+   - TF.js update to `3.10.0`
 
