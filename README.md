@@ -8,8 +8,8 @@ This project uses TF.js to calculate the facial landmarks.
 
 There are many Demos out there that are too complex. This repository is the minimum setup that I developed that contains a reasonable amount of component.
 
-This repo uses that latest dependencies from Google at 2021-09-01:
- - [tfjs@3.9.0](https://github.com/tensorflow/tfjs)
+This repo uses that latest dependencies from Google at 2021-10-22:
+ - [tfjs@3.10.0](https://github.com/tensorflow/tfjs)
  - [face-landmarks-detection@0.0.3](https://github.com/tensorflow/tfjs-models)
 
 There are 5 files in this repo:
@@ -28,6 +28,7 @@ If you want to try this repo by yourself, you can clone the project and use [htt
  - I saw more than 10% frame rate improvement jumping from TF.js `2.4.0` to TF.js `3.3.0`.
  - Model `face-landmarks-detection@0.0.3` seems to be slightly more stable than `facemesh@0.0.5`, but the difference is hard to tell.
  - I am using MacBook, and I had tried several methods (including plaid-ml) to utilize my MacBook's GPU to do the job. At the end, using WebGL with TF.js is the easiest and the fastest solution.
+ - I saw 20% frame rate improvement when moving from a 2017 MacBook to a 2020 MacBook. A better computer does help.
 
 ### Changelog
 
