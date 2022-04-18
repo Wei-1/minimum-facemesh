@@ -55,3 +55,5 @@ If you want to try this repo by yourself, you can clone the project and use [htt
    - TF.js update to `3.11.0`
  - 2022-01-16
    - TF.js update to `3.13.0`
+ - 2022-04-18
+   - TF.js update to `3.15.0`
